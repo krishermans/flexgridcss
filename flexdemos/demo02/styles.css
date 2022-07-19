@@ -1,0 +1,36 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row; /* verander eens naar row-reverse, column, column-reverse */
+	border: solid 4px #000;
+}
+
+.flex-item {
+	color: #fff;
+	font-size: 1.2em;
+	padding: 1em;
+	text-align: center;
+}
+
+.flex-item:nth-child(3n+1) { /* https://www.w3schools.com/cssref/sel_nth-child.asp */
+	background-color: #A62E5C;
+}
+
+.flex-item:nth-child(3n+2) {
+	background-color: #9BC850;
+}
+
+.flex-item:nth-child(3n+3) {
+	background-color: #675BA7;
+}
+
+.flex-item strong {
+	display: block;
+	font-size: 130%;
+}	
